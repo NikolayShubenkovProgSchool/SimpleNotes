@@ -26,10 +26,32 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="wbI-98-P1v"/>
+                    <connections>
+                        <segue destination="xkf-jv-6Ke" kind="push" id="cv5-Qg-nzP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5AS-oP-9sm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1099" y="31"/>
+            <point key="canvasLocation" x="1113" y="31"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="Bad-MC-txh">
+            <objects>
+                <viewController storyboardIdentifier="detailVC" id="xkf-jv-6Ke" customClass="PSRDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="J6G-bk-KmQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="SxO-S5-urf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="B5g-jb-bYT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="tvC-3p-PtN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ppm-8e-WX3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1606" y="31"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="OOW-i8-cX8">
