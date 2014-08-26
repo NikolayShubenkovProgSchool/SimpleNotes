@@ -9,6 +9,12 @@
 #import "PSRColorSelectViewController.h"
 
 @interface PSRColorSelectViewController ()
+{
+    CGFloat red;
+    CGFloat green;
+    CGFloat blue;
+    CGFloat alpha;
+}
 
 @end
 
@@ -26,7 +32,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self configureView];
+}
+
+- (void)configureView
+{
+    self.colorView.backgroundColor = self.note.color;
+    
+    [self.note.color getRed:&red green:&green blue:&blue alpha:&alpha];
+    
+    self.RColorSlider.value = red;
+    self.GColorSlider.value = green;
+    self.BColorSlider.value = blue;
 }
 
 - (void)didReceiveMemoryWarning
@@ -38,6 +55,28 @@
 - (void)viewWillDisappear:(BOOL)animated
 {
     self.note.color = self.colorView.backgroundColor;
+}
+
+- (IBAction)rColorSliderTouchUpInside:(id)sender
+{
+    red = self.RColorSlider.value;
+    self.note.color = [UIColor colorWithRed:red green:green blue:blue alpha:alpha];
+    self.colorView.backgroundColor = self.note.color;
+}
+
+- (IBAction)gColorSliderTouchUpInside:(id)sender
+{
+    green = self.GColorSlider.value;
+    self.note.color = [UIColor colorWithRed:red green:green blue:blue alpha:alpha];
+    self.colorView.backgroundColor = self.note.color;
+}
+
+
+- (IBAction)bColorSliderTouchUpInside:(id)sender
+{
+    blue = self.BColorSlider.value;
+    self.note.color = [UIColor colorWithRed:red green:green blue:blue alpha:alpha];
+    self.colorView.backgroundColor = self.note.color;
 }
 
 @end

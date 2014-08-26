@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "PSRNote.h"
 
+#define sliderValuePerRGB 0.39216
+
 @interface PSRColorSelectViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet UIView *colorView;
