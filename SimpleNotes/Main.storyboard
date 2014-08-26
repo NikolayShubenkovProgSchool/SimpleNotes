@@ -55,10 +55,10 @@
             </objects>
             <point key="canvasLocation" x="1608" y="31"/>
         </scene>
-        <!--View Controller-->
+        <!--Color Select View Controller-->
         <scene sceneID="wkf-Xy-oZN">
             <objects>
-                <viewController id="f6r-4a-Iqq" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="colorSelectVC" id="f6r-4a-Iqq" customClass="PSRColorSelectViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y1q-eB-1aH"/>
                         <viewControllerLayoutGuide type="bottom" id="hGQ-97-28m"/>
@@ -88,6 +88,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="LIp-az-ccL"/>
+                    <connections>
+                        <outlet property="BColorSlider" destination="e7l-T2-9og" id="YTh-Px-DIA"/>
+                        <outlet property="GColorSlider" destination="WEw-ys-XUN" id="RGf-f0-0J4"/>
+                        <outlet property="RColorSlider" destination="HbO-ha-BgN" id="Uar-Ay-gPH"/>
+                        <outlet property="colorView" destination="ccL-oD-VqB" id="P6I-mb-Cfx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yy5-cW-Rrl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

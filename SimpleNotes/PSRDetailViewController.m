@@ -7,6 +7,7 @@
 //
 
 #import "PSRDetailViewController.h"
+#import "PSRColorSelectViewController.h"
 
 @interface PSRDetailViewController ()
 
@@ -26,17 +27,28 @@
     
     self.navigationItem.title = self.note.text;
     
-    //UIBarButtonItem *cancelButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(cancel)];
-    //self.navigationItem.rightBarButtonItem = cancelButton;
+    UIBarButtonItem *selectColorButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target:self action:@selector(selectColor)];
+    self.navigationItem.rightBarButtonItem = selectColorButton;
 }
 
-/*- (void)cancel {
+- (void)selectColor
+{
+    PSRColorSelectViewController *colorSelectVC =
+    [[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"colorSelectVC"];
     
-}*/
+    self.note.color = self.textView.textColor;
+    colorSelectVC.note = self.note;
+    
+    [self.navigationController pushViewController:colorSelectVC animated:YES];
+}
 
 - (void)viewWillDisappear:(BOOL)animated
 {
     self.note.text = self.textView.text;
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    self.textView.textColor = self.note.color;
+}
 @end
