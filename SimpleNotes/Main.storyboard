@@ -27,7 +27,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="wbI-98-P1v"/>
                     <connections>
-                        <segue destination="xkf-jv-6Ke" kind="push" id="cv5-Qg-nzP"/>
+                        <segue destination="xkf-jv-6Ke" kind="push" identifier="showNoteEditing" id="cv5-Qg-nzP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5AS-oP-9sm" userLabel="First Responder" sceneMemberID="firstResponder"/>
