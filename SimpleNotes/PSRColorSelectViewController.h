@@ -2,8 +2,7 @@
 //  PSRColorSelectViewController.h
 //  SimpleNotes
 //
-//  Created by Admin on 26.08.14.
-//  Copyright (c) 2014 Daniil Korotin. All rights reserved.
+//  Copyright (c) 2014 Ostashkov Ilya. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
