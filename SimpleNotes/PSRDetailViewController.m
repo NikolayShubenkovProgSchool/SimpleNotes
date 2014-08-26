@@ -14,10 +14,10 @@
 
 @implementation PSRDetailViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
-    self.textView = [[UITextView alloc] initWithFrame:self.view.bounds];
+    self.textView = [[UITextView alloc] initWithFrame:CGRectMake(10, 65, 300, 405)];
     [self.view addSubview:self.textView];
     
     if (self.note) {
@@ -34,7 +34,8 @@
     
 }*/
 
-- (void)viewWillDisappear:(BOOL)animated {
+- (void)viewWillDisappear:(BOOL)animated
+{
     self.note.text = self.textView.text;
 }
 
