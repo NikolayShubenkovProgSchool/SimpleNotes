@@ -36,46 +36,40 @@
 
 - (void)configureView
 {
-    self.colorView.backgroundColor = self.note.color;
+    self.colorView.backgroundColor = self.color;
     
-    [self.note.color getRed:&red green:&green blue:&blue alpha:&alpha];
+    [self.color getRed:&red green:&green blue:&blue alpha:&alpha];
     
     self.RColorSlider.value = red;
     self.GColorSlider.value = green;
     self.BColorSlider.value = blue;
 }
 
-- (void)didReceiveMemoryWarning
+- (void)viewDidDisappear:(BOOL)animated
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-- (void)viewWillDisappear:(BOOL)animated
-{
-    self.note.color = self.colorView.backgroundColor;
+    [self.delegate psr_colorSelectViewXontroller:self chooseColor:self.color];
 }
 
 - (IBAction)rColorSliderTouchUpInside:(id)sender
 {
     red = self.RColorSlider.value;
-    self.note.color = [UIColor colorWithRed:red green:green blue:blue alpha:alpha];
-    self.colorView.backgroundColor = self.note.color;
+    self.color = [UIColor colorWithRed:red green:green blue:blue alpha:alpha];
+    self.colorView.backgroundColor = self.color;
 }
 
 - (IBAction)gColorSliderTouchUpInside:(id)sender
 {
     green = self.GColorSlider.value;
-    self.note.color = [UIColor colorWithRed:red green:green blue:blue alpha:alpha];
-    self.colorView.backgroundColor = self.note.color;
+    self.color = [UIColor colorWithRed:red green:green blue:blue alpha:alpha];
+    self.colorView.backgroundColor = self.color;
 }
 
 
 - (IBAction)bColorSliderTouchUpInside:(id)sender
 {
     blue = self.BColorSlider.value;
-    self.note.color = [UIColor colorWithRed:red green:green blue:blue alpha:alpha];
-    self.colorView.backgroundColor = self.note.color;
+    self.color = [UIColor colorWithRed:red green:green blue:blue alpha:alpha];
+    self.colorView.backgroundColor = self.color;
 }
 
 @end

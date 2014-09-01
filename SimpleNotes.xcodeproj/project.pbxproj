@@ -126,19 +126,12 @@
 		1F42EFB6190978A700B91F5B /* SimpleNotes */ = {
 			isa = PBXGroup;
 			children = (
-				1F42EFBF190978A700B91F5B /* PSRAppDelegate.h */,
-				1F42EFC0190978A700B91F5B /* PSRAppDelegate.m */,
-				1F42EFE619097ED100B91F5B /* PSRMasterViewController.h */,
-				1F42EFE719097ED100B91F5B /* PSRMasterViewController.m */,
-				1F42EFE9190989DC00B91F5B /* PSRDetailViewController.h */,
-				1F42EFEA190989DC00B91F5B /* PSRDetailViewController.m */,
+				84AFC95819B450A000115C10 /* Controller */,
+				84AFC95719B4509800115C10 /* View */,
 				1F876B9C19165105009DA0BB /* yoda.png */,
 				1F42EFE5190978EC00B91F5B /* Model */,
 				1F42EFC2190978A700B91F5B /* Images.xcassets */,
 				1F42EFB7190978A700B91F5B /* Supporting Files */,
-				849C490219AB56FE00EB98CD /* Main.storyboard */,
-				84E129C519AC6B14000E4851 /* PSRColorSelectViewController.h */,
-				84E129C619AC6B14000E4851 /* PSRColorSelectViewController.m */,
 			);
 			path = SimpleNotes;
 			sourceTree = "<group>";
@@ -177,10 +170,33 @@
 			children = (
 				1F42EFDF190978E200B91F5B /* PSRNote.h */,
 				1F42EFE0190978E200B91F5B /* PSRNote.m */,
+				849C490219AB56FE00EB98CD /* Main.storyboard */,
 				1F42EFE1190978E200B91F5B /* PSRNoteManager.h */,
 				1F42EFE2190978E200B91F5B /* PSRNoteManager.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		84AFC95719B4509800115C10 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		84AFC95819B450A000115C10 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84E129C519AC6B14000E4851 /* PSRColorSelectViewController.h */,
+				84E129C619AC6B14000E4851 /* PSRColorSelectViewController.m */,
+				1F42EFBF190978A700B91F5B /* PSRAppDelegate.h */,
+				1F42EFC0190978A700B91F5B /* PSRAppDelegate.m */,
+				1F42EFE619097ED100B91F5B /* PSRMasterViewController.h */,
+				1F42EFE719097ED100B91F5B /* PSRMasterViewController.m */,
+				1F42EFE9190989DC00B91F5B /* PSRDetailViewController.h */,
+				1F42EFEA190989DC00B91F5B /* PSRDetailViewController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

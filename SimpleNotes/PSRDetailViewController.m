@@ -35,8 +35,8 @@
     PSRColorSelectViewController *colorSelectVC =
     [[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"colorSelectVC"];
     
-    self.note.color = self.textView.textColor;
-    colorSelectVC.note = self.note;
+    colorSelectVC.delegate = self;
+    colorSelectVC.color = self.note.color;
     
     [self.navigationController pushViewController:colorSelectVC animated:YES];
 }
@@ -50,4 +50,16 @@
 {
     self.textView.textColor = self.note.color;
 }
+
+#pragma mark PSRColorSelectViewControllerDelegate
+
+- (void)psr_colorSelectViewXontroller:(PSRColorSelectViewController *)controller chooseColor:(UIColor *)color
+{
+    if (!color)
+    {
+        self.note.color = color;
+        self.textView.textColor = self.note.color;
+    }
+}
+
 @end
