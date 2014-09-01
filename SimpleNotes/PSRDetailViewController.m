@@ -17,28 +17,22 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.textView = [[UITextView alloc] initWithFrame:CGRectMake(10, 65, 300, 405)];
-    [self.view addSubview:self.textView];
     
     if (self.note) {
         self.textView.text = self.note.text;
     }
     
     self.navigationItem.title = self.note.text;
-    
-    UIBarButtonItem *selectColorButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target:self action:@selector(selectColor)];
-    self.navigationItem.rightBarButtonItem = selectColorButton;
 }
 
-- (void)selectColor
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    PSRColorSelectViewController *colorSelectVC =
-    [[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"colorSelectVC"];
-    
-    colorSelectVC.delegate = self;
-    colorSelectVC.color = self.note.color;
-    
-    [self.navigationController pushViewController:colorSelectVC animated:YES];
+    if ([segue.destinationViewController isKindOfClass:[PSRColorSelectViewController class]])
+    {
+        PSRColorSelectViewController *colorSelectViewController = segue.destinationViewController;
+        colorSelectViewController.delegate = self;
+        colorSelectViewController.color = self.note.color;
+    }
 }
 
 - (void)viewWillDisappear:(BOOL)animated
