@@ -45,7 +45,7 @@
     self.BColorSlider.value = blue;
 }
 
-- (void)viewDidDisappear:(BOOL)animated
+- (void)viewWillDisappear:(BOOL)animated
 {
     [self.delegate psr_colorSelectViewXontroller:self chooseColor:self.color];
 }

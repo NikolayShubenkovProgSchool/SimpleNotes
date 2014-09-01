@@ -55,7 +55,7 @@
 
 - (void)psr_colorSelectViewXontroller:(PSRColorSelectViewController *)controller chooseColor:(UIColor *)color
 {
-    if (!color)
+    if (color)
     {
         self.note.color = color;
         self.textView.textColor = self.note.color;
