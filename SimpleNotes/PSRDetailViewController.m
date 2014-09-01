@@ -45,7 +45,7 @@
     self.textView.textColor = self.note.color;
 }
 
-#pragma mark PSRColorSelectViewControllerDelegate
+#pragma mark - PSRColorSelectViewControllerDelegate -
 
 - (void)psr_colorSelectViewXontroller:(PSRColorSelectViewController *)controller chooseColor:(UIColor *)color
 {
