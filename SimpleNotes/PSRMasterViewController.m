@@ -15,15 +15,6 @@
 
 @implementation PSRMasterViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -69,6 +60,7 @@
     PSRNote *note = [[[PSRNoteManager sharedManager] notes] objectAtIndex:indexPath.row];
     cell.textLabel.text = note.text;
     cell.textLabel.textColor = note.color;
+    cell.textLabel.font = note.font;
     
     return cell;
 }

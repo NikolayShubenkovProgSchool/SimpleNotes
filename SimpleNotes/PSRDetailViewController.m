@@ -43,6 +43,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     self.textView.textColor = self.note.color;
+    self.textView.font = self.note.font;
 }
 
 #pragma mark - PSRColorSelectViewControllerDelegate -
