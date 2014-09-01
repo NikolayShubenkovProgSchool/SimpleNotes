@@ -20,7 +20,7 @@
 
 @interface PSRColorSelectViewController : UIViewController
 
-@property (strong, nonatomic) IBOutlet PSRColorSelectView *colorSelectView;
+@property (weak, nonatomic) IBOutlet PSRColorSelectView *colorSelectView;
 
 @property (strong, nonatomic) UIColor *color;
 

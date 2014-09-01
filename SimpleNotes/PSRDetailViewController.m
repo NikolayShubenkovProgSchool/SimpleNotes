@@ -33,6 +33,11 @@
         colorSelectViewController.delegate = self;
         colorSelectViewController.color = self.note.color;
     }
+    else if ([segue.destinationViewController isKindOfClass:[PSRFontSelectViewController class]])
+    {
+        PSRFontSelectViewController *fontSelectViewController = segue.destinationViewController;
+        fontSelectViewController.delegate = self;
+    }
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -54,6 +59,17 @@
     {
         self.note.color = color;
         self.textView.textColor = self.note.color;
+    }
+}
+
+#pragma mark - PSRFontSelectViewControllerDelegate -
+
+- (void)psr_fontSelectViewXontroller:(PSRFontSelectViewController *)controller selectFont:(UIFont *)font
+{
+    if (font)
+    {
+        self.note.font = font;
+        self.textView.font = font;
     }
 }
 

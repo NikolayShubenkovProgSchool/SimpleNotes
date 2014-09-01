@@ -8,8 +8,9 @@
 #import <UIKit/UIKit.h>
 #import "PSRNote.h"
 #import "PSRColorSelectViewController.h"
+#import "PSRFontSelectViewController.h"
 
-@interface PSRDetailViewController : UIViewController <PSRColorSelectViewControllerDelegate>
+@interface PSRDetailViewController : UIViewController <PSRColorSelectViewControllerDelegate, PSRFontSelectViewControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextView *textView;
 

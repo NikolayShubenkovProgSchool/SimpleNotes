@@ -24,6 +24,7 @@
 		1F42EFE819097ED100B91F5B /* PSRMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F42EFE719097ED100B91F5B /* PSRMasterViewController.m */; };
 		1F42EFEB190989DC00B91F5B /* PSRDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F42EFEA190989DC00B91F5B /* PSRDetailViewController.m */; };
 		849B1E7219B4842B0069C650 /* PSRColorSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 849B1E7119B4842B0069C650 /* PSRColorSelectView.m */; };
+		849B1E7619B49C420069C650 /* PSRFontSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849B1E7519B49C420069C650 /* PSRFontSelectViewController.m */; };
 		849C490319AB56FE00EB98CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849C490219AB56FE00EB98CD /* Main.storyboard */; };
 		84E129C719AC6B14000E4851 /* PSRColorSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E129C619AC6B14000E4851 /* PSRColorSelectViewController.m */; };
 /* End PBXBuildFile section */
@@ -65,6 +66,8 @@
 		1F42EFEA190989DC00B91F5B /* PSRDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSRDetailViewController.m; sourceTree = "<group>"; };
 		849B1E7019B4842B0069C650 /* PSRColorSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSRColorSelectView.h; sourceTree = "<group>"; };
 		849B1E7119B4842B0069C650 /* PSRColorSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSRColorSelectView.m; sourceTree = "<group>"; };
+		849B1E7419B49C420069C650 /* PSRFontSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSRFontSelectViewController.h; sourceTree = "<group>"; };
+		849B1E7519B49C420069C650 /* PSRFontSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSRFontSelectViewController.m; sourceTree = "<group>"; };
 		849C490219AB56FE00EB98CD /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		84E129C519AC6B14000E4851 /* PSRColorSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSRColorSelectViewController.h; sourceTree = "<group>"; };
 		84E129C619AC6B14000E4851 /* PSRColorSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSRColorSelectViewController.m; sourceTree = "<group>"; };
@@ -197,6 +200,8 @@
 				1F42EFE719097ED100B91F5B /* PSRMasterViewController.m */,
 				1F42EFE9190989DC00B91F5B /* PSRDetailViewController.h */,
 				1F42EFEA190989DC00B91F5B /* PSRDetailViewController.m */,
+				849B1E7419B49C420069C650 /* PSRFontSelectViewController.h */,
+				849B1E7519B49C420069C650 /* PSRFontSelectViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -302,6 +307,7 @@
 				1F42EFE4190978E200B91F5B /* PSRNoteManager.m in Sources */,
 				84E129C719AC6B14000E4851 /* PSRColorSelectViewController.m in Sources */,
 				1F42EFE3190978E200B91F5B /* PSRNote.m in Sources */,
+				849B1E7619B49C420069C650 /* PSRFontSelectViewController.m in Sources */,
 				1F42EFEB190989DC00B91F5B /* PSRDetailViewController.m in Sources */,
 				1F42EFE819097ED100B91F5B /* PSRMasterViewController.m in Sources */,
 				849B1E7219B4842B0069C650 /* PSRColorSelectView.m in Sources */,
