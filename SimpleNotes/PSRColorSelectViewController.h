@@ -11,6 +11,7 @@
 #define sliderValuePerRGB 0.39216
 
 @class PSRColorSelectViewController;
+@class PSRColorSelectView;
 @protocol PSRColorSelectViewControllerDelegate <NSObject>
 
 - (void)psr_colorSelectViewXontroller:(PSRColorSelectViewController *)controller chooseColor:(UIColor *)color;
@@ -19,10 +20,7 @@
 
 @interface PSRColorSelectViewController : UIViewController
 
-@property (strong, nonatomic) IBOutlet UIView *colorView;
-@property (strong, nonatomic) IBOutlet UISlider *RColorSlider;
-@property (strong, nonatomic) IBOutlet UISlider *GColorSlider;
-@property (strong, nonatomic) IBOutlet UISlider *BColorSlider;
+@property (strong, nonatomic) IBOutlet PSRColorSelectView *colorSelectView;
 
 @property (strong, nonatomic) UIColor *color;
 

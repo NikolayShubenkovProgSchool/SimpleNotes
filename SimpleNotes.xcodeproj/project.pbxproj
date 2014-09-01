@@ -23,7 +23,7 @@
 		1F42EFE4190978E200B91F5B /* PSRNoteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F42EFE2190978E200B91F5B /* PSRNoteManager.m */; };
 		1F42EFE819097ED100B91F5B /* PSRMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F42EFE719097ED100B91F5B /* PSRMasterViewController.m */; };
 		1F42EFEB190989DC00B91F5B /* PSRDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F42EFEA190989DC00B91F5B /* PSRDetailViewController.m */; };
-		1F876B9D19165105009DA0BB /* yoda.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F876B9C19165105009DA0BB /* yoda.png */; };
+		849B1E7219B4842B0069C650 /* PSRColorSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 849B1E7119B4842B0069C650 /* PSRColorSelectView.m */; };
 		849C490319AB56FE00EB98CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849C490219AB56FE00EB98CD /* Main.storyboard */; };
 		84E129C719AC6B14000E4851 /* PSRColorSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E129C619AC6B14000E4851 /* PSRColorSelectViewController.m */; };
 /* End PBXBuildFile section */
@@ -63,7 +63,8 @@
 		1F42EFE719097ED100B91F5B /* PSRMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSRMasterViewController.m; sourceTree = "<group>"; };
 		1F42EFE9190989DC00B91F5B /* PSRDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSRDetailViewController.h; sourceTree = "<group>"; };
 		1F42EFEA190989DC00B91F5B /* PSRDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSRDetailViewController.m; sourceTree = "<group>"; };
-		1F876B9C19165105009DA0BB /* yoda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yoda.png; sourceTree = "<group>"; };
+		849B1E7019B4842B0069C650 /* PSRColorSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSRColorSelectView.h; sourceTree = "<group>"; };
+		849B1E7119B4842B0069C650 /* PSRColorSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSRColorSelectView.m; sourceTree = "<group>"; };
 		849C490219AB56FE00EB98CD /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		84E129C519AC6B14000E4851 /* PSRColorSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSRColorSelectViewController.h; sourceTree = "<group>"; };
 		84E129C619AC6B14000E4851 /* PSRColorSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSRColorSelectViewController.m; sourceTree = "<group>"; };
@@ -128,7 +129,6 @@
 			children = (
 				84AFC95819B450A000115C10 /* Controller */,
 				84AFC95719B4509800115C10 /* View */,
-				1F876B9C19165105009DA0BB /* yoda.png */,
 				1F42EFE5190978EC00B91F5B /* Model */,
 				1F42EFC2190978A700B91F5B /* Images.xcassets */,
 				1F42EFB7190978A700B91F5B /* Supporting Files */,
@@ -170,7 +170,6 @@
 			children = (
 				1F42EFDF190978E200B91F5B /* PSRNote.h */,
 				1F42EFE0190978E200B91F5B /* PSRNote.m */,
-				849C490219AB56FE00EB98CD /* Main.storyboard */,
 				1F42EFE1190978E200B91F5B /* PSRNoteManager.h */,
 				1F42EFE2190978E200B91F5B /* PSRNoteManager.m */,
 			);
@@ -180,6 +179,9 @@
 		84AFC95719B4509800115C10 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				849C490219AB56FE00EB98CD /* Main.storyboard */,
+				849B1E7019B4842B0069C650 /* PSRColorSelectView.h */,
+				849B1E7119B4842B0069C650 /* PSRColorSelectView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -275,7 +277,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F876B9D19165105009DA0BB /* yoda.png in Resources */,
 				1F42EFBB190978A700B91F5B /* InfoPlist.strings in Resources */,
 				849C490319AB56FE00EB98CD /* Main.storyboard in Resources */,
 				1F42EFC3190978A700B91F5B /* Images.xcassets in Resources */,
@@ -303,6 +304,7 @@
 				1F42EFE3190978E200B91F5B /* PSRNote.m in Sources */,
 				1F42EFEB190989DC00B91F5B /* PSRDetailViewController.m in Sources */,
 				1F42EFE819097ED100B91F5B /* PSRMasterViewController.m in Sources */,
+				849B1E7219B4842B0069C650 /* PSRColorSelectView.m in Sources */,
 				1F42EFBD190978A700B91F5B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
