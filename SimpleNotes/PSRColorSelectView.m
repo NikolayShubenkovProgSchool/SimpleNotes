@@ -31,7 +31,7 @@
     self.blueSlider.value = blue;
 }
 
-- (IBAction)sliderTouchUpInside:(UISlider *)slider
+- (IBAction)sliderValueChanged:(UISlider *)slider
 {
     if (slider == self.redSlider)
     {

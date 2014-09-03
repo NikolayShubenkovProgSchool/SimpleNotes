@@ -146,21 +146,21 @@
                                 <rect key="frame" x="18" y="256" width="284" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <action selector="sliderTouchUpInside:" destination="ejv-Wc-l0I" eventType="touchUpInside" id="tjz-t2-ysF"/>
+                                    <action selector="sliderValueChanged:" destination="ejv-Wc-l0I" eventType="valueChanged" id="QMi-Io-Cu3"/>
                                 </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="WEw-ys-XUN" userLabel="GColorSlider">
                                 <rect key="frame" x="18" y="294" width="284" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <action selector="sliderTouchUpInside:" destination="ejv-Wc-l0I" eventType="touchUpInside" id="fNJ-mV-gIT"/>
+                                    <action selector="sliderValueChanged:" destination="ejv-Wc-l0I" eventType="valueChanged" id="g94-qa-9zc"/>
                                 </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="e7l-T2-9og" userLabel="BColorSlider">
                                 <rect key="frame" x="18" y="332" width="284" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <action selector="sliderTouchUpInside:" destination="ejv-Wc-l0I" eventType="touchUpInside" id="L2w-ue-iaL"/>
+                                    <action selector="sliderValueChanged:" destination="ejv-Wc-l0I" eventType="valueChanged" id="JEh-nZ-uAb"/>
                                 </connections>
                             </slider>
                         </subviews>
