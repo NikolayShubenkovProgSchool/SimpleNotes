@@ -18,7 +18,7 @@
 
 - (void)viewWillDisappear:(BOOL)animated
 {
-    self.color = self.colorSelectView.colorView.backgroundColor;
+    self.color = self.colorSelectView.selectedColor;
     [self.delegate psr_colorSelectViewXontroller:self chooseColor:self.color];
 }
 

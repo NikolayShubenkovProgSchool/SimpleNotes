@@ -16,12 +16,18 @@
     CGFloat alpha;
 }
 
+@property (weak, nonatomic) IBOutlet UIView *colorView;
+@property (weak, nonatomic) IBOutlet UISlider *redSlider;
+@property (weak, nonatomic) IBOutlet UISlider *greenSlider;
+@property (weak, nonatomic) IBOutlet UISlider *blueSlider;
+
 @end
 
 @implementation PSRColorSelectView
 
 - (void)setupColor:(UIColor *)color
 {
+    self.selectedColor = color;
     self.colorView.backgroundColor = color;
     
     [self.colorView.backgroundColor getRed:&red green:&green blue:&blue alpha:&alpha];
@@ -48,6 +54,8 @@
         blue = self.blueSlider.value;
         self.colorView.backgroundColor = [UIColor colorWithRed:red green:green blue:blue alpha:alpha];
     }
+    
+    self.selectedColor = self.colorView.backgroundColor;
 }
 
 @end

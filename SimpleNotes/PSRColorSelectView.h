@@ -10,10 +10,7 @@
 
 @interface PSRColorSelectView : UIView
 
-@property (weak, nonatomic) IBOutlet UIView *colorView;
-@property (weak, nonatomic) IBOutlet UISlider *redSlider;
-@property (weak, nonatomic) IBOutlet UISlider *greenSlider;
-@property (weak, nonatomic) IBOutlet UISlider *blueSlider;
+@property (strong, nonatomic) UIColor *selectedColor;
 
 -(void)setupColor:(UIColor *)color;
 
