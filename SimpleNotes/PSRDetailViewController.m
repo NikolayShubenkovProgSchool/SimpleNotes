@@ -18,9 +18,8 @@
 {
     [super viewDidLoad];
     
-    if (self.note) {
+    if (self.note)
         self.textView.text = self.note.text;
-    }
     
     self.navigationItem.title = self.note.text;
 }
@@ -42,11 +41,13 @@
 
 - (void)viewWillDisappear:(BOOL)animated
 {
+    [super viewWillDisappear:animated];
     self.note.text = self.textView.text;
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
+    [super viewWillAppear:animated];
     self.textView.textColor = self.note.color;
     self.textView.font = self.note.font;
 }
