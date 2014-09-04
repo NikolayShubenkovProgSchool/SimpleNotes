@@ -9,6 +9,8 @@
 #import "PSRNoteManager.h"
 #import "PSRDetailViewController.h"
 
+#define showNoteEditingSegueName @"showNoteEditing"
+
 @interface PSRMasterViewController ()
 
 @end
@@ -40,6 +42,22 @@
     [self.tableView reloadData];
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([segue.identifier isEqualToString:showNoteEditingSegueName] &&
+       [sender isKindOfClass:[NSIndexPath class]])
+    {
+        NSIndexPath *indexPath = (NSIndexPath *)sender;
+        if (!indexPath)
+            return;
+        
+        PSRDetailViewController *detailVC = (PSRDetailViewController *)segue.destinationViewController;
+        
+        PSRNote *note = [[[PSRNoteManager sharedManager] notes] objectAtIndex:indexPath.row];
+        detailVC.note = note;
+    }
+}
+
 #pragma mark - UITableView delegate methods
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -67,12 +85,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    PSRDetailViewController *detailVC =
-    [[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"detailVC"];
-    
-    PSRNote *note = [[[PSRNoteManager sharedManager] notes] objectAtIndex:indexPath.row];
-    detailVC.note = note;
-    [self.navigationController pushViewController:detailVC animated:YES];
+    [self performSegueWithIdentifier:showNoteEditingSegueName sender:indexPath];
 }
 
 @end
