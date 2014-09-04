@@ -48,6 +48,10 @@
             [fonts addObject:[fontNames objectAtIndex:indFont]];
         }
     }
+    
+    //sort
+    NSSortDescriptor * sortDesc = [[NSSortDescriptor alloc] initWithKey:@"self" ascending:YES];
+    [fonts sortUsingDescriptors:[NSArray arrayWithObject:sortDesc]];
 }
 
 #pragma mark - UITableView delegate methods
